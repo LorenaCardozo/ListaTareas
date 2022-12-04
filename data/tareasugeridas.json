@@ -1,0 +1,6 @@
+[
+    {"tarea": "Leer un libro", "agregada": false},
+    {"tarea": "Hacer ejercicio", "agregada": false},    
+    {"tarea": "Realizar las compras", "agregada": false},  
+    {"tarea": "Meditar 3 minutos", "agregada": false}
+]

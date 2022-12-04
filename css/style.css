@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*outline: solid 1px red;*/
+}
+
+body{
+    background: rgb(32,49,171);
+    background: linear-gradient(90deg, rgb(113, 127, 238) 0%, rgb(218, 141, 141) 50%, rgb(172, 214, 148) 100%);
+    font-size: 1.5rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.div-tarea{
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;*/
+    margin: 0 20%;
+    /*margin: 15% 30% 0% 30%;*/
+}
+
+ul{
+    list-style: none;
+    width: 80%;
+}
+
+.texto-error{
+    color: red;
+}
+
+li{
+    display: flex;
+    background-color: rgb(35, 95, 214, 0.90);
+    margin: 15px;
+    min-height: 50px;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 1.5rem;
+    color: azure;
+    padding: 0 5px 0 5px;
+    border-radius: 4px;
+    border-color: gray;
+}
+
+li.completa{
+    background-color: rgba(96, 117, 163, 0.9);
+}
+
+.contenedor-input{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding-top: 5%;
+    background-color:rgb(225, 224, 224, 0.45);
+    border-radius: 5px;
+    margin-bottom: 15px;    
+
+}
+
+.contenedor-input #input-tarea{
+    width: 60%;
+    margin:15px;
+
+}
+
+
+.btnAgregar{
+    margin: 5px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.contenedor-lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    background-color:rgb(183, 183, 227, 0.45)
+}
+
+/******************************************************************************************/
+
+.div-cabecera{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.div-tiempo{
+    color: white;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: rgb(96, 96, 96);*/
+    padding: 15px;
+}
+
+.div-dia-hora{
+    color: white;
+/*    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+    padding: 15px;
+}
+
+.div-dato-tiempo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 20%;
+}
+
+.div-temperatura{
+    text-align: center;
+    text-justify:distribute;
+    font-size: 2rem;
+}
+
+
+
+.div-hora{
+
+    font-size: 2rem;
+    margin-top: 30px;
+    
+    
+}
+
+.texto-tarea{
+    color: white;
+}
+
+.div-sugerido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-tarea-sugerido{
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: rgb(35, 95, 214, 0.90);
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+
+}
+
+.text{
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.seccion-sugerido{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20%;
+    color: white;
+}
+
+.div-sugerido
+{
+    visibility:visible;
+    background-color:rgb(183, 183, 227, 0.45);
+    transition: visibility 5s;
+}
+
+.div-sugerido.oculto{
+    display:none !important;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 768px) {
+
+body{
+    font-size: 1rem;
+}
+
+
+.div-temperatura{
+    font-size: 1rem;
+}
+
+.div-hora{
+    font-size: 1rem;
+}
+
+.div-sugerido{
+    flex-direction: column;
+}
+
+.seccion-sugerido{
+    margin: 0 10%;
+}
+
+.div-tarea-sugerido{
+    justify-content: flex-start;
+}
+
+.div-tarea{
+    margin: 0 5%;
+}
+
+li{
+    font-size: 1rem;
+}
+
+ul{
+    width: 100%;
+}
+
+.div-tiempo p{
+    font-size: x-small;
+}
+
+.div-dia {
+    font-size: x-small;
+}
+
+}
